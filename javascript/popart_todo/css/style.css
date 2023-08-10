@@ -1,0 +1,195 @@
+:root 
+{
+    --light: #F2F2F2;
+    --light-pink: #FF82E2;
+    --pink: #FE0879;    
+    --yellow: #FED715;
+    --blue: #0037B3;
+    --light-blue: #68c1c9;
+    --red: #fb1d36;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--yellow);
+    color: var(--light);
+}
+
+header
+{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1
+{
+    background-color: var(--light-pink);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--light);
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    
+    box-shadow: 4px 4px rgba(0,0,0);
+    border: 2px solid rgba(0,0,0);
+
+}
+
+#task-form
+{
+    display: flex;  
+}
+
+input, button
+{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input
+{
+    flex: 1 1 0%;
+    background-color: var(--light-blue);
+    color: rgba(0,0,0);
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+
+    box-shadow: 4px 4px rgba(0,0,0);
+    border: 2px solid rgba(0,0,0);
+}
+
+#task-input::placeholder
+{
+    color: var(--blue)
+}
+
+#task-submit
+{
+    background-color: var(--pink);
+    color: var(--light);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 1rem;
+
+    box-shadow: 4px 4px rgba(0,0,0);
+    border: 2px solid rgba(0,0,0);
+}
+
+#task-submit:hover
+{
+    opacity: 0.8;
+}
+
+#task-submit:active
+{
+    opacity: 0.6;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+    
+.task-list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    padding: 1rem;
+    max-width: 60vw;
+    width: 50vw;
+    background-color: #F2F2F2;
+
+    box-shadow: 4px 4px rgba(0,0,0);
+    border: 2px solid rgba(0,0,0);
+    
+}
+
+#tasks .task
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px rgba(0,0,0);
+    border: 2px solid black;
+}
+
+#tasks .content
+{
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text
+{
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only)
+{
+    color: var(--yellow);
+}
+
+#tasks .task .actions
+{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.task .actions button
+{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover
+{
+    opacity: 0.8;
+}
+
+.task .actions button:active
+{
+    opacity: 0.6;
+}
+
+.task .actions .edit
+{
+    color: var(--yellow);
+}
+
+.task .actions .delete
+{
+    color: var(--red);
+}

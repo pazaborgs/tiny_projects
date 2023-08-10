@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="./css/urna.css">
+</head>
+<body>
+    <div class="base">
+        <div class="urna">
+            <div class="tela">
+                <div class="visor">
+                    <div>
+                        <h2> Votação Eleitoral </h2>
+                    </div>
+                </div>
+                <div>
+                    <span>
+                        Digite o número do candidato
+                    </span>
+                </div>
+                <div>
+                    <h1> Hokage de Konoha </h1>
+                </div>
+                <div class ="caixa_input">
+                    <div class ="input1">
+
+                    </div>
+
+                    <div class ="input2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="teclado">
+                <div class="titulo">
+                    <img src="img/konoha.png" alt="logo da urna">
+                    <h1>JUSTIÇA ELEITORAL</h1>
+                </div>
+
+                <div>
+                    <div class="teclado_num">
+                    <button id ="1" class="botao_numerico" type = "button"> 1 </button>
+                    <button id ="2" class="botao_numerico" type = "button"> 2 </button>  
+                    <button id ="3" class="botao_numerico" type = "button"> 3 </button>  
+                    <button id ="4" class="botao_numerico" type = "button"> 4 </button>  
+                    <button id ="5" class="botao_numerico" type = "button"> 5 </button>  
+                    <button id ="6" class="botao_numerico" type = "button"> 6 </button>  
+                    <button id ="7" class="botao_numerico" type = "button"> 7 </button>
+                    <button id ="8" class="botao_numerico" type = "button"> 8 </button>  
+                    <button id ="9" class="botao_numerico" type = "button"> 9 </button>  
+                
+                    </div>  
+                
+                </div>
+
+                <div class = "teclado_zero">
+                    <button id ="0" class="botao_numerico" type = "button"> 0 </button> 
+                </div>
+
+                <div class="teclado_acoes">
+                    <button id ="btn_branco" class="botao_branco" type = "button"> BRANCO </button>
+                    <button id ="btn_corrige" class="botao_corrige" type = "button"> CORRIGE </button>
+                    <button id ="btn_confirma" class="botao_confirma" type = "button"> CONFIRMA </button>    
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="module" src="./js/controller/urna_controller.js" defer></script>
+    <script type ="module" src="./js/model/candidato.js"></script>
+</body>
+</html>
